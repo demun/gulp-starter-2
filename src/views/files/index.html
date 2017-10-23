@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  @@include('../includes/head.html', { "title": "mainpage", "path": "." })
+</head>
+
+<body>
+
+<h1>Sub page</h1>
+<ul>
+  <li><a href="html/sub.html" target="_blank">sub page</a></li>
+  <li><a href="html/sub1/sub1.html" target="_blank">sub1</a></li>
+  <li><a href="html/sub1/sub2.html" target="_blank">sub2</a></li>
+</ul>
+
+<br><br>
+        
+<h1>Examples</h1>
+<ul>
+  <li><a href="html/examples/fontawesome.html" target="_blank"><i class="fa fa-home" aria-hidden="true"></i>fontawesome.html</a></li>
+  <li><a href="html/examples/swiper.html" target="_blank">swiper.html</a></li>
+  <li><a href="html/examples/xzoom.html" target="_blank">xzoom.html</a></li>
+</ul>
+
+<br><br>
+
+<h1>File include</h1>
+<div>in1.html 를 인클루드함</div>
+@@include('../includes/in1.html') 
+<br>
+<div>in2.html 를 인클루드함</div>
+@@include('../includes/in2.html')
+
+<br><br>
+
+<h1>Data include</h1>
+<div>conditional.txt 를 읽고 조건에 따라서 인클루드 함</div>
+@@if (context.name === 'example') { @@include('../includes/conditional.txt', { "param": "success" }) }
+
+
+
+</body>
+
+</html>

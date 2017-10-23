@@ -1,0 +1,42 @@
+{
+  "name": "gulp-starter-2",
+  "title": "Gulp starter Kit",
+  "description": "Gulp Starter Kit",
+  "version": "0.0.1",
+  "homepage": "https://github.com/demun/gulp-starter-2",
+  "author": {
+    "name": "demun",
+    "url": "http://demun.tistory.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:demun/gulp-starter-2.git"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.5.3",
+    "babel-preset-latest": "^6.16.0",
+    "browser-sync": "^2.18.5",
+    "del": "^2.2.2",
+    "eslint": "^3.12.0",
+    "eslint-config-airbnb-base": "^11.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-changed": "^1.3.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-copy": "^1.0.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-eslint": "^3.0.1",
+    "gulp-file-include": "*",
+    "gulp-imagemin": "^3.4.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^6.2.0",
+    "gulp-prettify": "*",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.0.0",
+    "gulp-uglify": "^2.0.0",
+    "gulp-util": "^3.0.7",
+    "minimist": "^1.2.0",
+    "run-sequence": "^1.2.2"
+  }
+}

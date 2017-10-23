@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  @@include('../../../includes/head.html', { "title": "xZoom", "path": "../../.." })
+</head>
+
+<body>
+
+
+
+    
+    <!-- default start -->
+    <section id="default" class="padding-top0">
+    <div class="row">
+      <div class="large-12 column"><h3>Default options</h3></div>
+      <div class="large-5 column">
+        <div class="xzoom-container">
+          <img class="xzoom" id="xzoom-default" src="../../../images/gallery/preview/01_b_car.jpg" xoriginal="../../../images/gallery/original/01_b_car.jpg" />
+          <div class="xzoom-thumbs">
+            <a href="javascript:;"><img class="xzoom-gallery" width="80" src="../../../images/gallery/thumbs/01_b_car.jpg"  xpreview="../../../images/gallery/preview/01_b_car.jpg" title="The description goes here"></a>
+            <a href="javascript:;"><img class="xzoom-gallery" width="80" src="../../../images/gallery/preview/02_o_car.jpg" title="The description goes here"></a>
+            <a href="javascript:;"><img class="xzoom-gallery" width="80" src="../../../images/gallery/preview/03_r_car.jpg" title="The description goes here"></a>
+            <a href="javascript:;"><img class="xzoom-gallery" width="80" src="../../../images/gallery/preview/04_g_car.jpg" title="The description goes here"></a>
+          </div>
+        </div>        
+      </div>
+      <div class="large-7 column"></div>
+    </div>
+    </section>
+    <!-- default end -->
+
+    <!-- output window start -->
+    <section id="output">
+    <div class="row">
+      <div class="large-12 column"><h3>Output window</h3></div>
+      <div class="large-5 column">
+        <div class="xzoom-container">
+          <img class="xzoom2" src="../../../images/gallery/preview/02_o_car.jpg" xoriginal="../../../images/gallery/original/02_o_car.jpg" />
+            <div class="xzoom-thumbs">
+              <a href="javascript:;"><img class="xzoom-gallery2" width="80" src="../../../images/gallery/preview/02_o_car.jpg" xpreview="../../../images/gallery/preview/02_o_car.jpg" title="The description goes here"></a>
+            </div>
+        </div>        
+      </div>
+      <div class="large-7 column"><div id="xzoom2-id" style="float: right; width: 200px; height: 200px;"></div></div>
+    </div>
+    </section>   
+    <!-- output window end -->
+
+    <!-- lens options start -->
+    <section id="lens">
+    <div class="row">
+      <div class="large-12 column"><h3>Lens options</h3></div>
+      <div class="large-5 column">
+        <div class="xzoom-container">
+          <img class="xzoom3" src="../../../images/gallery/preview/03_r_car.jpg" xoriginal="../../../images/gallery/original/03_r_car.jpg" />
+          <div class="xzoom-thumbs">
+            <a href="javascript:;"><img class="xzoom-gallery3" width="80" src="../../../images/gallery/preview/03_r_car.jpg" xpreview="../../../images/gallery/preview/03_r_car.jpg" title="The description goes here"></a>
+          </div>
+        </div>        
+      </div>
+      <div class="large-7 column"></div>
+    </div>
+    </section>   
+    <!-- lens options end -->
+
+
+
+
+
+
+@@include('../../../includes/js.html', { "path": "../../.." })
+
+<script>
+  (function ($) {
+      $(document).ready(function() {
+        // $(".xzoom").xzoom();
+        $('.xzoom').xzoom({zoomWidth: 400, title: true, tint: '#333', Xoffset: 15});
+        $('.xzoom2').xzoom({position: '#xzoom2-id', tint: '#ffa200'});
+        $('.xzoom3').xzoom({position: 'lens', lensShape: 'circle', sourceClass: 'xzoom-hidden'});
+      });
+  })(jQuery);
+</script>
+
+
+
+</body>
+
+</html>

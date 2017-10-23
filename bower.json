@@ -1,0 +1,9 @@
+{
+  "name": "gulp-starter-2",
+  "devDependencies": {
+    "jquery": "^3.1.1",
+    "font-awsome": "latest",
+    "swiper": "*",
+    "xzoom": "^1.0.8"
+  }
+}
