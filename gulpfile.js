@@ -82,7 +82,12 @@ gulp.task('js:main', () => gulp
 
 // js -> min.js
 gulp.task('js:concat', () => {
-  gulp.src(`${path.build}/js/*.js`)
+  var allfiles = [
+    `${path.build}/js/bundle.js`,
+    `${path.build}/js/main.js`
+  ]
+  gulp.src(allfiles)
+  // gulp.src(`${path.build}/js/*.js`)
   .pipe(uglify())
   .pipe(rename({
     suffix: '.min',
@@ -126,7 +131,12 @@ gulp.task('scss', () =>
 
 // src css -> build css, min.css
 gulp.task('css:min', () => {
-  gulp.src(`${path.build}/css/*.css`)
+  var allfiles = [
+    `${path.build}/css/bundle.css`,
+    `${path.build}/css/main.css`
+  ]
+  gulp.src(allfiles)
+  // gulp.src(`${path.build}/css/*.css`)
   .pipe(nano())
   .pipe(rename({suffix: '.min'}))
   .pipe(gulp.dest(`${path.build}/css`))
